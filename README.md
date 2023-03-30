@@ -1,5 +1,6 @@
 # IP Konum(Location) Finder
 ## Install
+`git clone https://github.com/arinweb/ipkonum`
 `npm i --save ipkonum`
 
 ## _type_ Parameter
