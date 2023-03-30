@@ -1,0 +1,31 @@
+{
+  "name": "ipkonum",
+  "version": "1.0.4",
+  "description": "Arin Web | IP Konum(location) Finder",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arinweb/ipkonum.git"
+  },
+  "keywords": [
+    "ip",
+    "ipkonum",
+    "iplocation",
+    "ipfind",
+    "ipfinder",
+    "find",
+    "finder",
+    "location",
+    "konum"
+  ],
+  "author": "Murat Yiğit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arinweb/ipkonum/issues"
+  },
+  "homepage": "https://github.com/arinweb/ipkonum#readme"
+}
