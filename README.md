@@ -1,17 +1,34 @@
 # IP Konum(Location) Finder
+- [Install](#install)
+- App Example
+	- [ES6](#es6)
+	- [Classic](#example-1--classic)
+	- [Express](#example-2--express)
+- Response Example
+	- [Json](#response-json)
+	- [Xml](#response-xml)
+	- [Csv](#response-csv)
+	- [Newline](#response-newline)
+	- [Php](#response-php)
+
 ## Install
+`git clone https://github.com/f10tme/ipkonum`
 `npm i --save ipkonum`
 
-## _type_ Parameter
-- json `json`
-- xml `xml`
-- csv `csv`
-- newline `line`
-- php `php`,
-- Default Json `json`
+## _type_ Parameter | Default: `json`
 
-### Example 1 | Classic
-```node
+`json` `xml` `csv` `line` `php`
+[Response Example](#)
+
+### ES6 
+```js
+import ipkonum from "ipkonum";
+let getKonum = async (ip,type) => console.log(await ipkonum.getDetails(ip,type));
+getKonum("88.888.888.888");
+```
+
+### Classic
+```js
 const ipkonum = require("ipkonum");
 async function getKonum(ip,type) {
 	const data = await ipkonum.getDetails(ip,type);
@@ -20,10 +37,10 @@ async function getKonum(ip,type) {
 
 getKonum("88.888.888.888");
 ```
-### Example 2 | Express
+### Express
 #### Express Install
 `npm i --save express`
-```node
+```js
 // EXPRESS
 const express = require("express");
 const app = express();
@@ -60,7 +77,7 @@ app.listen(<PORT>); // http://localhost:<PORT>
 ```
 
 ## Response Xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <query>
 	<status>success</status>
@@ -108,3 +125,7 @@ Model A.S.
 ```php
 {"status": "success","country": "Turkey","countryCode": "TR","region": "06","regionName": "Ankara","city": "Ankara","zip": "99000","lat": 50,"lon": 50,"timezone": "Europe/Istanbul","isp": "Server","org": "Server A.S","as": "Model A.S.","query": "88.888.888.888"}
 ```
+
+
+---
+[Back to top](#)
