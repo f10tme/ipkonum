@@ -12,7 +12,7 @@
 - Default Json `json`
 
 ### Example 1 | Classic
-```node
+```js
 const ipkonum = require("ipkonum");
 async function getKonum(ip,type) {
 	const data = await ipkonum.getDetails(ip,type);
@@ -24,7 +24,7 @@ getKonum("88.888.888.888");
 ### Example 2 | Express
 #### Express Install
 `npm i --save express`
-```node
+```js
 // EXPRESS
 const express = require("express");
 const app = express();
@@ -61,7 +61,7 @@ app.listen(<PORT>); // http://localhost:<PORT>
 ```
 
 ## Response Xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <query>
 	<status>success</status>
