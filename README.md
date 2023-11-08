@@ -12,11 +12,16 @@
 	- [Php](#response-php)
 
 ## Install
+<<<<<<< HEAD
 `git clone https://github.com/f10tme/ipkonum`
+=======
+`git clone https://github.com/arinweb/ipkonum`
+>>>>>>> 1b8e17ecb32d95c6e4bafaf41b43821ede4133c0
 `npm i --save ipkonum`
 
 ## _type_ Parameter | Default: `json`
 
+<<<<<<< HEAD
 `json` `xml` `csv` `line` `php`
 [Response Example](#)
 
@@ -28,6 +33,9 @@ getKonum("88.888.888.888");
 ```
 
 ### Classic
+=======
+### Example 1 | Classic
+>>>>>>> 1b8e17ecb32d95c6e4bafaf41b43821ede4133c0
 ```js
 const ipkonum = require("ipkonum");
 async function getKonum(ip,type) {
@@ -125,7 +133,10 @@ Model A.S.
 ```php
 {"status": "success","country": "Turkey","countryCode": "TR","region": "06","regionName": "Ankara","city": "Ankara","zip": "99000","lat": 50,"lon": 50,"timezone": "Europe/Istanbul","isp": "Server","org": "Server A.S","as": "Model A.S.","query": "88.888.888.888"}
 ```
+<<<<<<< HEAD
 
 
 ---
 [Back to top](#)
+=======
+>>>>>>> 1b8e17ecb32d95c6e4bafaf41b43821ede4133c0
